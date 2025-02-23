@@ -33,7 +33,7 @@ const BudgetStatus = () => {
 
     return (
         <div className="">
-            <div className="mb-4 flex items-center justify-start gap-4">
+            <div className="mb-4 flex flex-wrap items-center justify-start gap-4">
                 <div className="font-bold text-3xl">
                     Budget Status
                 </div>
@@ -53,7 +53,7 @@ const BudgetStatus = () => {
                     </Button>
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-4 grid-cols-1 gap-4">
                 {projects.map((project, i) => (
                     <Card key={i} className="w-full max-w-md">
                         <CardContent className="p-4">
