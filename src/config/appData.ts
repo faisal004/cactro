@@ -12,3 +12,51 @@ export const teamMood = [
     { name: "Under Budget", value: 48, color: "#10b981" },
   ]
   
+ export interface Project {
+    name: string;
+    company: string;
+    budget: string;
+    profitability: string;
+    hours: string;
+    status: string;
+    type: 'over' | 'on' | 'under';
+}
+
+export const projects: Project[] = [
+    {
+        name: "Insurance App",
+        company: "Verit",
+        budget: "70,000 €",
+        profitability: "-2,500 €",
+        hours: "1,100",
+        status: "100 hours over budget",
+        type: "over",
+    },
+    {
+        name: "Neo",
+        company: "Bankia",
+        budget: "70,000 €",
+        profitability: "4,000 €",
+        hours: "1,100",
+        status: "1000 sold hours",
+        type: "on",
+    },
+    {
+        name: "VR Website",
+        company: "Barça",
+        budget: "70,000 €",
+        profitability: "4,000 €",
+        hours: "2,000",
+        status: "2000 sold hours",
+        type: "under",
+    },
+    {
+        name: "VR Website",
+        company: "Barça",
+        budget: "70,000 €",
+        profitability: "4,000 €",
+        hours: "1,100",
+        status: "1100 sold hours",
+        type: "under",
+    },
+];
