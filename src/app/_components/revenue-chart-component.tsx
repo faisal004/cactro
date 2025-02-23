@@ -1,17 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import RevenueChart from "./charts/revenue-chart";
+import { Switch } from "@/components/ui/switch";
 
 const RevenueChartComponent = () => {
   return (<Card className="w-full ">
     <CardHeader className="flex flex-row items-center justify-between">
       <CardTitle>Total Revenue</CardTitle>
-      <Tabs defaultValue="week">
-        <TabsList>
-          <TabsTrigger value="month">Month</TabsTrigger>
-          <TabsTrigger value="week">Week</TabsTrigger>
-        </TabsList>
-      </Tabs>
+      <div className="flex items-center gap-3">
+        <span>
+          Month
+        </span>
+        <Switch />
+        <span>
+          Week
+        </span>
+      </div>
+   
+
     </CardHeader>
     <CardContent className="w-full ">
       <RevenueChart className="aspect-square  " />
