@@ -6,4 +6,9 @@ export const teamMood = [
     { name: "Maria", role: "UX Junior", mood: 50, image: "https://github.com/sh.png" },
   ];
   
+  export const budgetdata = [
+    { name: "Over Budget", value: 19, color: "#ef4444" },
+    { name: "On Budget", value: 33, color: "#3b82f6" },
+    { name: "Under Budget", value: 48, color: "#10b981" },
+  ]
   
