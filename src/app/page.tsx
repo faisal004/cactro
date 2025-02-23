@@ -19,7 +19,7 @@ export default function Home() {
             <BudgetChartComponent />
           </div>
         </div>
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 h-full">
           <TeamMood />
 
         </div>

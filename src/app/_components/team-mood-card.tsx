@@ -30,7 +30,7 @@ const CustomSlider = ({ value }:{value:number}) => {
 
 const TeamMood = () => {
   return (
-    <Card className="w-full max-w-xl">
+    <Card className="w-full max-w-xl h-full">
       <CardHeader>
         <CardTitle>Team Mood</CardTitle>
       </CardHeader>
